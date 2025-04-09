@@ -1,0 +1,192 @@
+{
+	"title": "Test LORIS DATS file",
+	"description": "This is a test DATS.json metadata file containing proposed fields for storing LORIS-specific information",
+	"creators": [
+		{
+ 			"name": "The Montreal Neurological Institute and Hospital Bioinformatics Core",
+			"abbreviation": "The Neuro Bioinformatics Core",
+			"roles": [
+				{
+					"value": "Principal Investigator"
+				}
+			]
+		}
+	],
+	"types": [
+		{
+			"information": {
+				"value": "MRI_T1"
+			}
+		},
+		{
+			"information": {
+				"value": "Tissue_Blood"
+      		}
+    	},
+	],
+	"version": "1.0",
+	"privacy": "controlled",
+ 	"licenses": [
+		{
+			"name": "CC BY-SA"
+		}
+	],
+	"dates": [
+		{
+ 			"date": "2016-09-01",
+			"type": {
+				"value": "start date"
+			}
+ 		},
+		{
+			"date": "2025-01-16",
+			"type": {
+				"value": "end date"
+			}
+		}
+	],
+	"distributions": [
+		{
+ 			"formats": [
+				"MINC",
+				"NIfTI"
+            ],
+			"size": 50,
+			"unit": {
+				"value": "GB"
+			},
+			"access": {
+				"landingPage": "https://cbigr.loris.ca/",
+				"authorizations": [
+					{
+						"value": "registered"
+					}
+				]
+			}
+		}
+	],
+	"isAbout": [
+		{
+			"name": "Homo sapiens",
+			"identifier": {
+				"identifier": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+				"identifierSource": "NCBI Taxonomy Database"
+			}
+		}
+	],
+	"keywords": [
+		{
+			"value": "keyword 1"
+		},
+		{
+ 			"value": "keyword 2"
+		}
+	],
+	"extraProperties": [
+		{
+			"category": "LORIS",
+			"values": [
+				{
+					"LORISID": "LORISID99999",
+					"ExternalID": "EXTID9999",
+					"shortName": "Test Project",
+					"alias": "LI001",
+					"candidateAgeMin": 18,
+					"candidateAgeMax": 20,
+					"visits": [
+						{
+							"Visit 01":  {
+								"windowMinDays": 21,
+								"windowMaxDays": 99,
+								"optimumMinDays": 21,
+								"optimumMaxDays": 99,
+								"windowMidpointDays": 60
+							}
+						},
+						{
+							"Visit 02":  {
+								"windowMinDays": 21,
+								"windowMaxDays": 99,
+								"optimumMinDays": 21,
+								"optimumMaxDays": 99,
+								"windowMidpointDays": 60
+							}
+						}
+					],
+					"instruments": [
+						{
+							"name":"Instrument 1",
+							"label": "Instrument 1 (user facing name)",
+							"survey": false
+						},
+						{
+							"name": "Instrument 2",
+							"label": "Instrument 2 (user facing name)",
+							"survey": false
+						},
+					]
+				}
+			]
+		},
+		{
+			"subjects": [
+				{
+					"projected": 140,
+ 					"counted": 138
+				}
+	  		]
+		},
+ 		{
+ 			"files": [
+ 				{
+					"projected": 1200,
+					"counted": 1190
+				}
+			]
+ 		},
+		{
+      		"origin": [
+				{
+					"institution": "The Montreal Neurological Institute and Hospital Bioinformatics Core",
+					"city": "Montreal",
+					"province": "Quebec",
+					"country": "Canada",
+					"LORISSite": "LORIS site value here",
+					"LORISNetwork": "LORIS network value here"
+				}
+			]
+		},
+		{
+			"category": "logo",
+      		"values": [
+        		{
+          			"value": "logo.png"
+       			 }
+			]
+ 		},
+		{
+			"category": "registrationPage",
+			"values": [
+				{
+					"value": "https://loris.example.com/login/request-account/"
+				}
+			]
+		},
+ 		{
+			"category": "contact",
+			"values": [
+				{
+					"value": "The Montreal Neurological Institute and Hospital Bioinformatics Core, neurobioinfo@mcgill.ca"
+				}
+			]
+		},
+		{
+			"category": "REB_statement",
+			"values": [
+				{
+					"value": "There will be an updated ethics statement here."
+				}
+			]
+		}
+	]
+}
